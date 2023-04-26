@@ -14,6 +14,12 @@ export class BooksComponent implements OnInit{
   name2: string = 'Pragmatic programmer';
   author2: string = 'David Thomas'
 
+  isDisabled: boolean = false;
+
   ngOnInit(): void {
+  }
+
+  handleClick() {
+    this.isDisabled = true;
   }
 }

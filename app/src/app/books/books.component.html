@@ -1,12 +1,13 @@
 <h2>Programming Books List!</h2>
+<button (click)="handleClick()" [disabled]="isDisabled">Show Books</button>
 <ul>
   <li>
-    <img src="{{ src }}" alt="{{ name }}">
+    <img [src]="src" [alt]="name">
     {{ name }} by {{ author }}
   </li>
 
   <li>
-    <img src="{{ src2 }}" alt="{{ name2 }}">
+    <img [src]="src2" alt="{{ name2 }}">
     {{ name2 }} by {{ author2 }}
   </li>
 </ul>
